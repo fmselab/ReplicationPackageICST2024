@@ -19,3 +19,7 @@ This repository contains the replication material for the paper entitled "Testin
     * [`SpecificityChecker.java`](https://github.com/fmselab/ReplicationPackageICST2024/blob/main/featuremodels.specificity/src/featuremodels/specificity/SpecificityChecker.java), given a feature model evolution and a test, it checks whether the test is specific for the model evolution
   * [`test/featuremodels/specificity`](https://github.com/fmselab/ReplicationPackageICST2024/tree/main/featuremodels.specificity/test/featuremodels/specificity): it contains the code executing the experiments we report in the paper and other unit tests
     * [`ICSTExperiments.java`](https://github.com/fmselab/ReplicationPackageICST2024/blob/main/featuremodels.specificity/test/featuremodels/specificity/ICSTExperiments.java), the code executing the experiments we report in the paper 
+
+## Troubleshooting
+
+It may happen that the tests in the [`ICSTExperiments.java`](https://github.com/fmselab/ReplicationPackageICST2024/blob/main/featuremodels.specificity/test/featuremodels/specificity/ICSTExperiments.java) class end with an `ArrayStoreException`. If this is your case, please check the order of the dependencies in the Eclipse Run Configuration and move the `Maven Dependencies` as the first item in the Classpath Entries list.
