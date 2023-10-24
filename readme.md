@@ -22,4 +22,6 @@ This repository contains the replication material for the paper entitled "Testin
 
 ## Troubleshooting
 
-It may happen that the tests in the [`ICSTExperiments.java`](https://github.com/fmselab/ReplicationPackageICST2024/blob/main/featuremodels.specificity/test/featuremodels/specificity/ICSTExperiments.java) class end with an `ArrayStoreException`. If this is your case, please check the order of the dependencies in the Eclipse Run Configuration and move the `Maven Dependencies` as the first item in the Classpath Entries list.
+It may happen that the tests in the [`ICSTExperiments.java`](https://github.com/fmselab/ReplicationPackageICST2024/blob/main/featuremodels.specificity/test/featuremodels/specificity/ICSTExperiments.java) class end with an `ArrayStoreException`. If this is your case, please check the order of the dependencies in the Eclipse Run Configuration and move the `Maven Dependencies` as the first item in the Classpath Entries list (as shown in the following picture).
+
+![The screenshot showing the order of the Maven Dependencies in the Classpath Entries list](https://github.com/fmselab/ReplicationPackageICST2024/blob/main/img/Order.png?raw=true)
